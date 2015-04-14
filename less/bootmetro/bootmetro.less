@@ -1,5 +1,5 @@
 /*!
- * BootMetro v1.0.0-alpha1
+ * BootMetro v1.0.0-alpha1 - Bootstrap 3.3.4
  *
  * Copyright 2012 Marcello Palmitessa
  * Licensed under the Apache License v2.0
@@ -7,89 +7,85 @@
  *
  */
 
-
 // Core variables and mixins
-@import "variables.less"; // Modify this for custom colors, font-sizes, etc
-@import "../mixins.less";
-@import "mixins.less"; // overrides mixins
+@import "../bower_components/bootstrap_3.3.4/less/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../bower_components/bootmetro/less/bootmetro/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../bower_components/bootstrap_3.3.4/less/mixins.less";
+@import "../bower_components/bootstrap_2.3.2/less/mixins.less";
+@import "../bower_components/bootmetro/less/bootmetro/mixins.less"; // overrides mixins
 
-   // CSS Reset
-@import "../reset.less";
+// CSS Reset
+@import "../bower_components/bootstrap_2.3.2/less/reset.less";
 
 // Grid system and page structure
-@import "../scaffolding.less";
-@import "../grid.less";
-@import "../layouts.less";
+@import "../bower_components/bootstrap_2.3.2/less/scaffolding.less";
+@import "../bower_components/bootstrap_3.3.4/less/grid.less";
+@import "../bower_components/bootstrap_2.3.2/less/layouts.less";
 
 // Base CSS
-@import "../type.less";
-@import "../code.less";
-@import "../forms.less";
-@import "../tables.less";
-
-// Components: common
-//@import "../sprites.less";
-//@import "icomoon.less"; // use icomoon icons
-
-@import "../dropdowns.less";
-@import "wells.less";
-@import "../component-animations.less";
-@import "../close.less";
+@import "../bower_components/bootstrap_3.3.4/less/type.less";
+@import "../bower_components/bootstrap_3.3.4/less/code.less";
+@import "../bower_components/bootstrap_3.3.4/less/forms.less";
+@import "../bower_components/bootstrap_3.3.4/less/tables.less";
+@import "../bower_components/bootstrap_3.3.4/less/dropdowns.less";
+@import "../bower_components/bootmetro/less/bootmetro/wells.less";
+@import "../bower_components/bootstrap_3.3.4/less/component-animations.less";
+@import "../bower_components/bootstrap_3.3.4/less/close.less";
 
 // Components: Buttons & Alerts
-@import "../buttons.less";
-@import "../button-groups.less";
-@import "../alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+@import "../bower_components/bootstrap_3.3.4/less/buttons.less";
+@import "../bower_components/bootstrap_3.3.4/less/button-groups.less";
+@import "../bower_components/bootstrap_3.3.4/less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
 // Components: Nav
-@import "../navs.less";
-@import "../navbar.less";
-@import "../breadcrumbs.less";
-@import "../pagination.less";
-@import "../pager.less";
+@import "../bower_components/bootstrap_3.3.4/less/navs.less";
+@import "../bower_components/bootstrap_3.3.4/less/navbar.less";
+@import "../bower_components/bootstrap_3.3.4/less/breadcrumbs.less";
+@import "../bower_components/bootstrap_3.3.4/less/pagination.less";
+@import "../bower_components/bootstrap_3.3.4/less/pager.less";
 
 // Components: Popovers
-@import "../modals.less";
-@import "../tooltip.less";
-@import "../popovers.less";
+@import "../bower_components/bootstrap_3.3.4/less/modals.less";
+@import "../bower_components/bootstrap_3.3.4/less/tooltip.less";
+@import "../bower_components/bootstrap_3.3.4/less/popovers.less";
 
 // Components: Misc
-@import "../thumbnails.less";
-@import "../media.less";
-@import "../labels-badges.less";
-@import "../progress-bars.less";
-@import "../accordion.less";
-@import "../carousel.less";
-@import "../hero-unit.less";
+@import "../bower_components/bootstrap_3.3.4/less/thumbnails.less";
+@import "../bower_components/bootstrap_3.3.4/less/media.less";
+@import "../bower_components/bootstrap_2.3.2/less/labels-badges.less";
+@import "../bower_components/bootstrap_3.3.4/less/progress-bars.less";
+@import "../bower_components/bootstrap_2.3.2/less/accordion.less";
+@import "../bower_components/bootstrap_2.3.2/less/carousel.less";
+@import "../bower_components/bootstrap_2.3.2/less/hero-unit.less";
 
 // Utility classes
-@import "../utilities.less"; // Has to be last to override when necessary
+@import "../bower_components/bootstrap_3.3.4/less/utilities.less"; // Has to be last to override when necessary
 
 // BootMetro specs
-@import "scaffolding.less";
-@import "forms.less";
-@import "metro-radio-checkboxes.less";
-@import "tables.less";
-@import "dropdowns.less";
-@import "type.less";
-@import "buttons.less";
-@import "button-groups.less";
-@import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
-@import "navs.less";
-@import "navbar.less";
-@import "pagination.less";
-@import "modals-popovers.less";
-@import "tooltip.less";
-@import "filter-dropdowns.less";
-@import "labels-badges.less";
+@import "../bower_components/bootmetro/less/bootmetro/scaffolding.less";
+@import "../bower_components/bootmetro/less/bootmetro/forms.less";
+@import "../bower_components/bootmetro/less/bootmetro/metro-radio-checkboxes.less";
+@import "../bower_components/bootmetro/less/bootmetro/tables.less";
+@import "../bower_components/bootmetro/less/bootmetro/dropdowns.less";
+@import "../bower_components/bootmetro/less/bootmetro/type.less";
+@import "../bower_components/bootmetro/less/bootmetro/buttons.less";
+@import "../bower_components/bootmetro/less/bootmetro/button-groups.less";
+@import "../bower_components/bootmetro/less/bootmetro/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+@import "../bower_components/bootmetro/less/bootmetro/navs.less";
+@import "../bower_components/bootmetro/less/bootmetro/navbar.less";
+@import "../bower_components/bootmetro/less/bootmetro/pagination.less";
+@import "../bower_components/bootmetro/less/bootmetro/modals-popovers.less";
+@import "../bower_components/bootmetro/less/bootmetro/tooltip.less";
+@import "../bower_components/bootmetro/less/bootmetro/filter-dropdowns.less";
+@import "../bower_components/bootmetro/less/bootmetro/labels-badges.less";
 
-@import "progress-bars.less";
-@import "carousel.less";
-@import "flipview.less";
-@import "hero-unit.less";
+@import "../bower_components/bootmetro/less/bootmetro/progress-bars.less";
+@import "../bower_components/bootmetro/less/bootmetro/carousel.less";
+@import "../bower_components/bootmetro/less/bootmetro/flipview.less";
+@import "../bower_components/bootmetro/less/bootmetro/hero-unit.less";
 
-@import "tiles.less";
-@import "pivot.less";
-@import "listviews.less";
-@import "charms.less";
-@import "wizard.less";
+@import "../bower_components/bootmetro/less/bootmetro/tiles.less";
+@import "../bower_components/bootmetro/less/bootmetro/pivot.less";
+@import "../bower_components/bootmetro/less/bootmetro/listviews.less";
+@import "../bower_components/bootmetro/less/bootmetro/charms.less";
+@import "../bower_components/bootmetro/less/bootmetro/wizard.less";
